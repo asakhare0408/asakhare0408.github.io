@@ -4,119 +4,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aditya Sakhare - Data Analyst Portfolio</title>
+  <title>Aditya Sakhare | Data Analyst</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: white;
-      color: #000;
-      margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
     }
-    header, section, footer {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+    section {
+      padding: 60px 0;
     }
-    h1, h2, h3 {
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .section-title {
+      color: #008080;
+      margin-bottom: 30px;
+    }
+    .skills li::marker {
       color: #008080;
     }
-    .subtitle {
-      font-size: 1.2rem;
-      color: #333;
-    }
-    .skills, .services {
-      list-style: none;
-      padding: 0;
-    }
-    .skills li, .services li {
+    .case-study li {
       margin-bottom: 0.5rem;
     }
     .highlight {
       background-color: #e0f7f7;
       padding: 1rem;
       border-left: 4px solid #008080;
-      margin-top: 1rem;
-    }
-    .contact p {
-      margin: 0.3rem 0;
-    }
-    img.profile-pic {
-      max-width: 150px;
-      border-radius: 50%;
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>Aditya Sakhare - Portfolio</h1>
-    <p class="subtitle">Aditya Sakhare - Aspiring Data Analyst</p>
-    <p>Welcome to my portfolio. I am Aditya Sakhare</p>
-    <p>Transitioning into data analytics after 9+ years in quality control and operations management. Proficient in Python, SQL, Power BI, and Excel, with strong analytical skills and a drive to make data-driven decisions.</p>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Aditya Sakhare</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-light text-center py-5 mt-5">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Hi, I'm Aditya Sakhare</h1>
+      <p class="lead">Data Analyst | Insights Enthusiast | Dashboard Designer</p>
+    </div>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <img src="my-photo.jpg" alt="Aditya Sakhare" class="profile-pic">
-    <h3>Skills & Expertise</h3>
-<ul class="skills">
-  <li><strong>Data Cleaning & Preparation:</strong> Excel, SQL</li>
-  <li><strong>Business Intelligence Reporting:</strong> Power BI</li>
-  <li><strong>Exploratory Data Analysis (EDA):</strong> Data profiling, pattern recognition</li>
-  <li><strong>Dashboard Design & Visualization:</strong> Interactive and insight-driven dashboards</li>
-  <li><strong>Workflow Optimization:</strong> Operational reporting improvements</li>
-  <li><strong>Python:</strong> Pandas, NumPy, Matplotlib</li>
-  <li><strong>Tools:</strong> MySQL, Advanced Excel</li>
-</ul>
-
+  <!-- About Section -->
+  <section id="about" class="container">
+    <h2 class="section-title">About Me</h2>
+    <p>I'm a results-driven Data Analyst with a passion for transforming raw data into actionable insights. I specialize in Power BI dashboards, SQL data wrangling, and delivering compelling business intelligence solutions that support strategic decision-making.</p>
   </section>
 
-  <section>
-    <h2>Portfolio Highlights</h2>
-    <h3>Case Study: Financial Dashboard in Power BI</h3>
-    <ul>
+  <!-- Skills Section -->
+  <section id="skills" class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Skills & Expertise</h2>
+      <ul class="skills">
+        <li>Data Cleaning & Preparation (Excel, SQL)</li>
+        <li>Business Intelligence Reporting (Power BI)</li>
+        <li>Exploratory Data Analysis (EDA)</li>
+        <li>Dashboard Design & Data Visualization</li>
+        <li>Workflow Optimization & Operational Reporting</li>
+        <li>Python (Pandas, NumPy, Matplotlib)</li>
+        <li>MySQL, Advanced Excel</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="container">
+    <h2 class="section-title">Portfolio Highlights</h2>
+    <h5 class="text-teal fw-bold">Case Study: Financial Dashboard in Power BI</h5>
+    <ul class="case-study">
       <li><strong>Objective:</strong> Analyze financial KPIs using a sample dataset to support decision-making.</li>
       <li><strong>Tools:</strong> Power BI</li>
       <li><strong>Impact:</strong> Delivered interactive dashboard with improved insight delivery.</li>
     </ul>
-  </section>
-
-  <section>
-    <h2>Project Examples</h2>
-    <h3>Network Congestion Analysis</h3>
-    <p><strong>Objective:</strong> Evaluate network congestion patterns and propose improvements.</p>
-    <p><strong>Tools:</strong> Excel, Power BI</p>
-    <p><strong>Outcome:</strong> Suggested actionable improvements for infrastructure planning.</p>
-
-    <h3>Bike Sales Dashboard</h3>
-    <p><strong>Objective:</strong> Visualize sales KPIs by region and category.</p>
-    <p><strong>Tools:</strong> Excel</p>
-    <p><strong>Outcome:</strong> Improved sales tracking and business decisions.</p>
-  </section>
-
-  <section>
-    <h2>Services Offered</h2>
-    <p>I offer beginner-to-intermediate data analytics services to support data-driven decisions:</p>
-    <ul class="services">
-      <li><strong>Excel Reports & Dashboards</strong></li>
-      <li><strong>Power BI Visualization</strong></li>
-      <li><strong>SQL Data Queries & Cleaning</strong></li>
-      <li><strong>Root Cause & Operational Reporting</strong></li>
-    </ul>
-    <h3>Why Choose Me</h3>
-    <p>I bring years of business process experience into analytics, ensuring practical, usable insights for operations and management. Eager to learn, contribute, and grow in a data-driven role.</p>
-  </section>
-
-  <footer>
-    <h2>Contact Information</h2>
-    <div class="contact">
-      <p>Email: adityasakhare0408@gmail.com</p>
-      <p>Phone: +91 96620 65638</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/aditya-sakhare-2b7090189" target="_blank">aditya-sakhare-2b7090189</a></p>
-      <p>Location: Vadodara, Gujarat, India</p>
+    <div class="highlight mt-3">
+      <p>"Aditya created an intuitive dashboard that became a central tool for our financial analysis. Highly recommended!"</p>
+      <p><em>- Client Testimonial</em></p>
     </div>
-  </footer>
-</body>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="bg-light">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <p>Email: adityasakhare0408@email.com</p>
+      <p>LinkedIn: https://linkedin.com/in/aditya-sakhare-2b7090189</p>
+      <p>GitHub: github.com/aditya-sakhare</p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
