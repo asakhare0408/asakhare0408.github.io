@@ -1,70 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Aditya Sakhare | Portfolio</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9f9f9;
+      background: #f4f4f4;
       color: #333;
     }
+
     header {
       background: #1e1e2f;
       color: #fff;
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
+
     nav {
       background: #2d2d44;
-      padding: 10px 0;
+      padding: 12px 0;
       text-align: center;
     }
+
     nav a {
       color: #fff;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
-    }
-    .section {
-      padding: 50px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .project {
-      background: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .resume-btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #1e1e2f;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    footer {
-      background: #1e1e2f;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    .contact-info {
-      margin-top: 10px;
       font-size: 16px;
     }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #1e1e2f;
+      margin-bottom: 20px;
+    }
+
     .career-objective {
       background: #fff;
       border-radius: 10px;
       padding: 20px;
       margin-top: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .project {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    .resume-card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .resume-card h3 {
+      margin-top: 0;
+    }
+
+    .button-group {
+      margin-top: 15px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 14px;
+      transition: background 0.3s ease;
+      display: inline-block;
+    }
+
+    .preview {
+      background-color: #4b6cb7;
+      color: #fff;
+    }
+
+    .preview:hover {
+      background-color: #3a57a3;
+    }
+
+    .download {
+      background-color: #28a745;
+      color: #fff;
+    }
+
+    .download:hover {
+      background-color: #218838;
+    }
+
+    .contact-info {
+      font-size: 16px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
+
+    footer {
+      background: #1e1e2f;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -84,6 +142,7 @@
   <section class="section" id="home">
     <h2>Welcome!</h2>
     <p>Hi, I'm Aditya — passionate about data, dashboards, and delivering insights through Excel, Power BI, and more.</p>
+
     <div class="career-objective">
       <h3>Career Objective</h3>
       <p>Aspiring Data Analyst transitioning from a robust 9+ year background in quality control and operations management. Passionate about uncovering data-driven insights, improving business processes, and supporting strategic decision-making. Seeking an entry-level Data Analyst role in a growth-focused environment where I can contribute value and continue learning.</p>
@@ -99,24 +158,27 @@
     </div>
   </section>
 
-<section class="section" id="resume">
-  <h2>Resume</h2>
-  <p>You can preview or download my resumes below:</p>
+  <section class="section" id="resume">
+    <h2>📄 My Resumes</h2>
+    <p>You can preview or download my resumes below:</p>
 
-  <div class="project">
-    <h3>📄 Data Analyst Resume</h3>
-    <a class="resume-btn" href="Aditya_Sakhare_Data_Analyst_CV.pdf" target="_blank">🔍 Preview</a><br><br>
-    <a class="resume-btn" href="Aditya_Sakhare_Data_Analyst_CV.pdf" download>⬇️ Download</a>
-  </div>
+    <div class="resume-card">
+      <h3>📘 Data Analyst Resume</h3>
+      <div class="button-group">
+        <a class="btn preview" href="Aditya_Sakhare_Data_Analyst_CV.pdf" target="_blank">🔍 Preview</a>
+        <a class="btn download" href="Aditya_Sakhare_Data_Analyst_CV.pdf" download>⬇️ Download</a>
+      </div>
+    </div>
 
-  <div class="project">
-    <h3>📄 Sr. QC Lead Resume</h3>
-    <a class="resume-btn" href="Aditya_Sakhare_sr.QC_lead.pdf" target="_blank">🔍 Preview</a><br><br>
-    <a class="resume-btn" href="Aditya_Sakhare_sr.QC_lead.pdf" download>⬇️ Download</a>
-  </div>
-</section>
+    <div class="resume-card">
+      <h3>📙 Sr. QC Lead Resume</h3>
+      <div class="button-group">
+        <a class="btn preview" href="Aditya_Sakhare_sr_QC_lead.pdf" target="_blank">🔍 Preview</a>
+        <a class="btn download" href="Aditya_Sakhare_sr_QC_lead.pdf" download>⬇️ Download</a>
+      </div>
+    </div>
+  </section>
 
-  
   <section class="section" id="contact">
     <h2>Contact</h2>
     <div class="contact-info">
