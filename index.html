@@ -1,138 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aditya Sakhare | Portfolio</title>
+  <title>Aditya Sakhare - Data Analyst Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: white;
+      color: #000;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
+    }
+    header, section, footer {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #008080;
+    }
+    .subtitle {
+      font-size: 1.2rem;
       color: #333;
     }
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 20px;
+    .skills, .services {
+      list-style: none;
+      padding: 0;
     }
-    header {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    .skills li, .services li {
+      margin-bottom: 0.5rem;
     }
-    .profile-photo {
-      width: 120px;
-      height: 120px;
+    .highlight {
+      background-color: #e0f7f7;
+      padding: 1rem;
+      border-left: 4px solid #008080;
+      margin-top: 1rem;
+    }
+    .contact p {
+      margin: 0.3rem 0;
+    }
+    img.profile-pic {
+      max-width: 150px;
       border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin-top: 10px;
-    }
-    h2 {
-      color: #2563eb;
-      margin-top: 40px;
-    }
-    .section {
-      margin-top: 40px;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .resume-container {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-    .resume-card {
-      background-color: #f8f9fa;
-      border-radius: 10px;
-      padding: 20px;
-      flex: 1;
-      min-width: 250px;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-    }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 5px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-    .preview {
-      background-color: #2563eb;
-      color: #fff;
-    }
-    .preview:hover {
-      background-color: #1d4ed8;
-    }
-    .download {
-      background-color: #22c55e;
-      color: #fff;
-    }
-    .download:hover {
-      background-color: #16a34a;
     }
   </style>
 </head>
+
 <body>
   <header>
-    <img src="my-photo.jpg" alt="Aditya Sakhare" class="profile-photo">
-    <h1>Aditya Sakhare</h1>
-    <p>Aspiring Data Analyst | Python | SQL | Power BI | Data Visualization</p>
+    <h1>Data Analyst Portfolio</h1>
+    <p class="subtitle">Aditya Sakhare - Aspiring Data Analyst</p>
+    <p>Welcome to my portfolio. I am Aditya Sakhare, an aspiring data analyst with 9+ years in quality control and operations management, now transitioning into the data field with a passion for uncovering insights and improving decision-making.</p>
   </header>
 
-  <div class="container">
-    <section class="section">
-      <h2>🎯 Career Objective</h2>
-      <p>
-        Aspiring Data Analyst with a passion for uncovering insights from data and helping businesses make data-driven decisions. Looking to contribute to a dynamic team where I can apply my analytical skills and grow as a professional.
-      </p>
-    </section>
+  <section>
+    <h2>About Me</h2>
+    <img src="profile.jpg" alt="Aditya Sakhare" class="profile-pic">
+    <p>Transitioning into data analytics after 9+ years in quality control and operations management. Proficient in Python, SQL, Power BI, and Excel, with strong analytical skills and a drive to make data-driven decisions.</p>
+    <h3>Skills & Expertise</h3>
+    <ul class="skills">
+      <li>Data Cleaning & Preparation (Excel, SQL)</li>
+      <li>Business Intelligence Reporting (Power BI)</li>
+      <li>Exploratory Data Analysis (EDA)</li>
+      <li>Dashboard Design & Data Visualization</li>
+      <li>Workflow Optimization & Operational Reporting</li>
+      <li>Python (Pandas, NumPy, Matplotlib)</li>
+      <li>MySQL, Advanced Excel</li>
+    </ul>
+  </section>
 
-    <section class="section">
-      <h2>📞 Contact Information</h2>
-      <p>Email: aditya.sakhare@example.com</p>
-      <p>Phone: +91 9662065638</p>
+  <section>
+    <h2>Portfolio Highlights</h2>
+    <h3>Case Study: Financial Dashboard in Power BI</h3>
+    <ul>
+      <li><strong>Objective:</strong> Analyze financial KPIs using a sample dataset to support decision-making.</li>
+      <li><strong>Tools:</strong> Power BI</li>
+      <li><strong>Impact:</strong> Delivered interactive dashboard with improved insight delivery.</li>
+    </ul>
+    <div class="highlight">
+      <p>"Aditya developed a comprehensive dashboard that gave us better visibility into our financials. A valuable asset to any analytics team!"</p>
+      <p><em>- Sample Feedback</em></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Project Examples</h2>
+    <h3>Network Congestion Analysis</h3>
+    <p><strong>Objective:</strong> Evaluate network congestion patterns and propose improvements.</p>
+    <p><strong>Tools:</strong> Excel, Power BI</p>
+    <p><strong>Outcome:</strong> Suggested actionable improvements for infrastructure planning.</p>
+
+    <h3>Bike Sales Dashboard</h3>
+    <p><strong>Objective:</strong> Visualize sales KPIs by region and category.</p>
+    <p><strong>Tools:</strong> Excel</p>
+    <p><strong>Outcome:</strong> Improved sales tracking and business decisions.</p>
+  </section>
+
+  <section>
+    <h2>Services Offered</h2>
+    <p>I offer beginner-to-intermediate data analytics services to support data-driven decisions:</p>
+    <ul class="services">
+      <li><strong>Excel Reports & Dashboards</strong></li>
+      <li><strong>Power BI Visualization</strong></li>
+      <li><strong>SQL Data Queries & Cleaning</strong></li>
+      <li><strong>Root Cause & Operational Reporting</strong></li>
+    </ul>
+    <h3>Why Choose Me</h3>
+    <p>I bring years of business process experience into analytics, ensuring practical, usable insights for operations and management. Eager to learn, contribute, and grow in a data-driven role.</p>
+  </section>
+
+  <footer>
+    <h2>Contact Information</h2>
+    <div class="contact">
+      <p>Email: adityasakhare0408@gmail.com</p>
+      <p>Phone: +91 96620 65638</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/aditya-sakhare-2b7090189" target="_blank">aditya-sakhare-2b7090189</a></p>
       <p>Location: Vadodara, Gujarat, India</p>
-      <p>GitHub: <a href="https://github.com/adityasakhare" target="_blank">github.com/adityasakhare</a></p>
-    </section>
-
-    <section class="section">
-      <h2>📄 My Resumes</h2>
-      <p>You can preview or download my resumes below:</p>
-      <div class="resume-container">
-        <div class="resume-card">
-          <h3>Data Analyst Resume</h3>
-          <a class="btn preview" href="#" target="_blank">Preview</a>
-          <a class="btn download" href="#" target="_blank">Download</a>
-        </div>
-        <div class="resume-card">
-          <h3>Sr. QC Lead Resume</h3>
-          <a class="btn preview" href="#" target="_blank">Preview</a>
-          <a class="btn download" href="#" target="_blank">Download</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>💼 Projects</h2>
-      <div class="project">
-        <h3>📊 Bike Sales Dashboard</h3>
-        <p>Excel dashboard to analyze sales performance by region, category, and trends. Includes slicers, pivot charts, and KPIs.</p>
-        <a href="https://github.com/adityasakhare/bike-sales-dashboard" target="_blank">View on GitHub</a>
-      </div>
-    </section>
-  </div>
+    </div>
+  </footer>
 </body>
+
 </html>
