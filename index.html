@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Resumes</title>
+  <title>Aditya Sakhare | Resume Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
@@ -11,49 +11,78 @@
       font-family: 'Inter', sans-serif;
       background-color: #f5f5f5;
       margin: 0;
-      padding: 20px;
+      padding: 0;
     }
 
-    .header {
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .profile img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
+    }
+
+    .profile h1 {
+      font-size: 2.2rem;
+      margin: 10px 0 5px;
+      color: #1f2937;
+    }
+
+    .profile p {
+      font-size: 1rem;
+      color: #4b5563;
+    }
+
+    .section {
+      background-color: #f3f4f6;
+      border-radius: 12px;
+      padding: 30px;
+      margin-top: 20px;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      color: #111827;
+      margin-bottom: 10px;
       display: flex;
       align-items: center;
-      margin-bottom: 30px;
     }
 
-    .header img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-right: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    .section h2 i {
+      margin-right: 10px;
+      color: #1e3a8a;
     }
 
-    .header h1 {
-      font-size: 2.2rem;
-      color: #222;
-      margin: 0;
-    }
-
-    .description {
+    .section p {
+      color: #4b5563;
       margin-bottom: 25px;
-      font-size: 1rem;
-      color: #444;
     }
 
     .resumes {
       display: flex;
-      gap: 30px;
       flex-wrap: wrap;
+      gap: 20px;
     }
 
     .card {
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
       flex: 1 1 45%;
-      min-width: 300px;
+      padding: 20px;
+      min-width: 280px;
       transition: transform 0.3s ease;
     }
 
@@ -61,44 +90,41 @@
       transform: translateY(-5px);
     }
 
-    .card h2 {
-      font-size: 1.3rem;
-      color: #333;
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
       display: flex;
       align-items: center;
-      margin-bottom: 15px;
+      color: #1f2937;
     }
 
-    .card h2 i {
+    .card h3 i {
       margin-right: 10px;
     }
 
     .btn-group {
       display: flex;
-      gap: 15px;
-      margin-top: 10px;
+      gap: 12px;
     }
 
     .btn {
-      padding: 10px 20px;
-      font-size: 1rem;
-      font-weight: 600;
+      padding: 10px 18px;
       border: none;
       border-radius: 8px;
-      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
       color: white;
       display: flex;
       align-items: center;
-      transition: all 0.3s ease;
-      text-decoration: none;
+      transition: background-color 0.3s, transform 0.3s;
     }
 
     .btn i {
-      margin-right: 8px;
+      margin-right: 6px;
     }
 
     .preview-btn {
-      background-color: #2563eb;
+      background-color: #1d4ed8;
     }
 
     .preview-btn:hover {
@@ -114,41 +140,56 @@
       background-color: #15803d;
       transform: scale(1.05);
     }
+
+    @media (max-width: 640px) {
+      .resumes {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <img src="my-photo.jpg" alt="My Photo" />
-    <h1>My Resumes</h1>
-  </div>
-
-  <p class="description">You can preview or download my resumes below:</p>
-
-  <div class="resumes">
-    <!-- Resume 1 -->
-    <div class="card">
-      <h2><i class="fas fa-file-alt" style="color: #2563eb;"></i> Data Analyst Resume</h2>
-      <div class="btn-group">
-        <a href="Aditya_Sakhare_Data_Analyst_CV.pdf" target="_blank" class="btn preview-btn">
-          <i class="fas fa-search"></i> Preview
-        </a>
-        <a href="Aditya_Sakhare_Data_Analyst_CV.pdf" download class="btn download-btn">
-          <i class="fas fa-download"></i> Download
-        </a>
-      </div>
+  <div class="container">
+    <!-- Profile section -->
+    <div class="profile">
+      <img src="my-photo.jpg" alt="Aditya Sakhare">
+      <h1>Aditya Sakhare</h1>
+      <p>Aspiring Data Analyst | Python | SQL | Power BI | Data Visualization</p>
     </div>
 
-    <!-- Resume 2 -->
-    <div class="card">
-      <h2><i class="fas fa-file-alt" style="color: #f97316;"></i> Sr. QC Lead Resume</h2>
-      <div class="btn-group">
-        <a href="Aditya_Sakhare_sr.QC_lead.pdf" target="_blank" class="btn preview-btn">
-          <i class="fas fa-search"></i> Preview
-        </a>
-        <a href="Aditya_Sakhare_sr.QC_lead.pdf" download class="btn download-btn">
-          <i class="fas fa-download"></i> Download
-        </a>
+    <!-- Resume section -->
+    <div class="section">
+      <h2><i class="fas fa-file-alt"></i> My Resumes</h2>
+      <p>You can preview or download my resumes below:</p>
+      <div class="resumes">
+
+        <!-- Resume 1 -->
+        <div class="card">
+          <h3><i class="fas fa-book"></i> Data Analyst Resume</h3>
+          <div class="btn-group">
+            <a href="Aditya_Sakhare_Data_Analyst_CV.pdf" target="_blank" class="btn preview-btn">
+              <i class="fas fa-search"></i> Preview
+            </a>
+            <a href="Aditya_Sakhare_Data_Analyst_CV.pdf" download class="btn download-btn">
+              <i class="fas fa-download"></i> Download
+            </a>
+          </div>
+        </div>
+
+        <!-- Resume 2 -->
+        <div class="card">
+          <h3><i class="fas fa-clipboard-list"></i> Sr. QC Lead Resume</h3>
+          <div class="btn-group">
+            <a href="Aditya_Sakhare_sr.QC_lead.pdf" target="_blank" class="btn preview-btn">
+              <i class="fas fa-search"></i> Preview
+            </a>
+            <a href="Aditya_Sakhare_sr.QC_lead.pdf" download class="btn download-btn">
+              <i class="fas fa-download"></i> Download
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
