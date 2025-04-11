@@ -3,182 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aditya Sakhare | Resume Showcase</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <title>My Resumes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f5f5;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f7f7f7;
-      color: #333;
+      padding: 20px;
     }
 
-    header {
-      padding: 30px 20px;
-      text-align: center;
-      background-color: #fff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-
-    header h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      color: #666;
-      font-size: 18px;
-    }
-
-    .container {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .container h2 {
+    .header {
       display: flex;
       align-items: center;
-      font-size: 26px;
-      margin-bottom: 10px;
-    }
-
-    .container h2 i {
-      margin-right: 10px;
-      color: #1e1e2f;
-    }
-
-    .container p {
-      color: #555;
       margin-bottom: 30px;
     }
 
-    .resume-wrapper {
+    .header img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      font-size: 2.2rem;
+      color: #222;
+      margin: 0;
+    }
+
+    .description {
+      margin-bottom: 25px;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .resumes {
       display: flex;
+      gap: 30px;
       flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
     }
 
-    .resume-card {
-      background-color: #fff;
+    .card {
+      background: white;
       border-radius: 12px;
-      padding: 25px 20px;
-      flex: 1 1 400px;
-      max-width: 500px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 25px;
+      flex: 1 1 45%;
+      min-width: 300px;
+      transition: transform 0.3s ease;
     }
 
-    .resume-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    .card:hover {
+      transform: translateY(-5px);
     }
 
-    .resume-title {
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 15px;
+    .card h2 {
+      font-size: 1.3rem;
+      color: #333;
       display: flex;
       align-items: center;
+      margin-bottom: 15px;
     }
 
-    .resume-title i {
-      font-size: 24px;
+    .card h2 i {
       margin-right: 10px;
     }
 
     .btn-group {
       display: flex;
       gap: 15px;
-      flex-wrap: wrap;
+      margin-top: 10px;
     }
 
     .btn {
       padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      display: inline-flex;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      display: flex;
       align-items: center;
-      justify-content: center;
-      transition: all 0.25s ease-in-out;
+      transition: all 0.3s ease;
+      text-decoration: none;
     }
 
     .btn i {
       margin-right: 8px;
     }
 
-    .btn.preview {
-      background-color: #004080;
-      color: #fff;
+    .preview-btn {
+      background-color: #2563eb;
     }
 
-    .btn.download {
-      background-color: #28a745;
-      color: #fff;
-    }
-
-    .btn:hover {
+    .preview-btn:hover {
+      background-color: #1e40af;
       transform: scale(1.05);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     }
 
-    .btn:active {
-      transform: scale(0.98);
+    .download-btn {
+      background-color: #16a34a;
     }
 
-    @media (max-width: 768px) {
-      .resume-wrapper {
-        flex-direction: column;
-        align-items: center;
-      }
+    .download-btn:hover {
+      background-color: #15803d;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Aditya Sakhare</h1>
-    <p>Aspiring Data Analyst | Python | SQL | Power BI | Data Visualization</p>
-  </header>
+  <div class="header">
+    <img src="my-photo.jpg" alt="My Photo" />
+    <h1>My Resumes</h1>
+  </div>
 
-  <section class="container">
-    <h2><i class="fas fa-file-alt"></i> My Resumes</h2>
-    <p>You can preview or download my resumes below:</p>
+  <p class="description">You can preview or download my resumes below:</p>
 
-    <div class="resume-wrapper">
-      <!-- Resume 1 -->
-      <div class="resume-card">
-        <div class="resume-title">
-          <i class="fas fa-book-open text-blue"></i> Data Analyst Resume
-        </div>
-        <div class="btn-group">
-          <a class="btn preview" href="Aditya_Sakhare_Data_Analyst_CV.pdf" target="_blank">
-            <i class="fas fa-search"></i> Preview
-          </a>
-          <a class="btn download" href="Aditya_Sakhare_Data_Analyst_CV.pdf" download>
-            <i class="fas fa-download"></i> Download
-          </a>
-        </div>
-      </div>
-
-      <!-- Resume 2 -->
-      <div class="resume-card">
-        <div class="resume-title">
-          <i class="fas fa-clipboard-list text-orange"></i> Sr. QC Lead Resume
-        </div>
-        <div class="btn-group">
-          <a class="btn preview" href="Aditya_Sakhare_sr.QC_lead.pdf" target="_blank">
-            <i class="fas fa-search"></i> Preview
-          </a>
-          <a class="btn download" href="Aditya_Sakhare_sr.QC_lead.pdf" download>
-            <i class="fas fa-download"></i> Download
-          </a>
-        </div>
+  <div class="resumes">
+    <!-- Resume 1 -->
+    <div class="card">
+      <h2><i class="fas fa-file-alt" style="color: #2563eb;"></i> Data Analyst Resume</h2>
+      <div class="btn-group">
+        <a href="Aditya_Sakhare_Data_Analyst_CV.pdf" target="_blank" class="btn preview-btn">
+          <i class="fas fa-search"></i> Preview
+        </a>
+        <a href="Aditya_Sakhare_Data_Analyst_CV.pdf" download class="btn download-btn">
+          <i class="fas fa-download"></i> Download
+        </a>
       </div>
     </div>
-  </section>
+
+    <!-- Resume 2 -->
+    <div class="card">
+      <h2><i class="fas fa-file-alt" style="color: #f97316;"></i> Sr. QC Lead Resume</h2>
+      <div class="btn-group">
+        <a href="Aditya_Sakhare_sr.QC_lead.pdf" target="_blank" class="btn preview-btn">
+          <i class="fas fa-search"></i> Preview
+        </a>
+        <a href="Aditya_Sakhare_sr.QC_lead.pdf" download class="btn download-btn">
+          <i class="fas fa-download"></i> Download
+        </a>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
