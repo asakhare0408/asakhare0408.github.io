@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aditya Sakhare | Resume Portfolio</title>
+  <title>Aditya Sakhare | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
       font-family: 'Inter', sans-serif;
-      background-color: #f5f5f5;
+      background-color: #f8f9fa;
       margin: 0;
       padding: 0;
+      color: #1f2937;
     }
 
     .container {
       max-width: 1000px;
-      margin: 0 auto;
+      margin: auto;
       padding: 30px 20px;
     }
 
     .profile {
       text-align: center;
-      margin-bottom: 40px;
+      padding-top: 20px;
     }
 
     .profile img {
-      width: 120px;
-      height: 120px;
+      width: 140px;
+      height: 140px;
       object-fit: cover;
       border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
       margin-bottom: 15px;
     }
 
     .profile h1 {
-      font-size: 2.2rem;
-      margin: 10px 0 5px;
-      color: #1f2937;
+      font-size: 2rem;
+      margin: 0;
     }
 
     .profile p {
       font-size: 1rem;
-      color: #4b5563;
+      color: #555;
     }
 
     .section {
-      background-color: #f3f4f6;
+      background: #ffffff;
+      margin: 30px 0;
       border-radius: 12px;
-      padding: 30px;
-      margin-top: 20px;
+      padding: 25px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
     .section h2 {
-      font-size: 1.8rem;
-      color: #111827;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-    }
-
-    .section h2 i {
-      margin-right: 10px;
-      color: #1e3a8a;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 8px;
+      color: #1d4ed8;
     }
 
     .section p {
-      color: #4b5563;
-      margin-bottom: 25px;
+      font-size: 1rem;
+      line-height: 1.6;
     }
 
     .resumes {
@@ -77,13 +73,13 @@
     }
 
     .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
-      flex: 1 1 45%;
+      background: #f9fafb;
       padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 45%;
       min-width: 280px;
-      transition: transform 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
     }
 
     .card:hover {
@@ -91,20 +87,13 @@
     }
 
     .card h3 {
-      font-size: 1.2rem;
       margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      color: #1f2937;
-    }
-
-    .card h3 i {
-      margin-right: 10px;
+      font-size: 1.2rem;
     }
 
     .btn-group {
       display: flex;
-      gap: 12px;
+      gap: 10px;
     }
 
     .btn {
@@ -124,16 +113,16 @@
     }
 
     .preview-btn {
-      background-color: #1d4ed8;
+      background-color: #2563eb;
     }
 
     .preview-btn:hover {
-      background-color: #1e40af;
+      background-color: #1e3a8a;
       transform: scale(1.05);
     }
 
     .download-btn {
-      background-color: #16a34a;
+      background-color: #22c55e;
     }
 
     .download-btn:hover {
@@ -141,9 +130,26 @@
       transform: scale(1.05);
     }
 
+    .contact-links a {
+      display: inline-block;
+      margin-right: 20px;
+      font-weight: 500;
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .contact-links a i {
+      margin-right: 8px;
+    }
+
     @media (max-width: 640px) {
       .resumes {
         flex-direction: column;
+      }
+
+      .contact-links a {
+        display: block;
+        margin-bottom: 10px;
       }
     }
   </style>
@@ -151,25 +157,35 @@
 <body>
 
   <div class="container">
-    <!-- Profile section -->
+    <!-- Profile -->
     <div class="profile">
       <img src="my-photo.jpg" alt="Aditya Sakhare">
       <h1>Aditya Sakhare</h1>
       <p>Aspiring Data Analyst | Python | SQL | Power BI | Data Visualization</p>
     </div>
 
-    <!-- Resume section -->
+    <!-- Career Objective -->
     <div class="section">
-      <h2><i class="fas fa-file-alt"></i> My Resumes</h2>
+      <h2>Career Objective</h2>
+      <p>
+        Passionate and detail-oriented Data Analyst with hands-on experience in SQL, Python, and Power BI.
+        Looking for an opportunity to turn data into actionable insights to support business decision-making.
+        Enthusiastic about solving real-world problems through data and analytics.
+      </p>
+    </div>
+
+    <!-- Resumes -->
+    <div class="section">
+      <h2>My Resumes</h2>
       <p>You can preview or download my resumes below:</p>
       <div class="resumes">
 
         <!-- Resume 1 -->
         <div class="card">
-          <h3><i class="fas fa-book"></i> Data Analyst Resume</h3>
+          <h3>Data Analyst Resume</h3>
           <div class="btn-group">
             <a href="Aditya_Sakhare_Data_Analyst_CV.pdf" target="_blank" class="btn preview-btn">
-              <i class="fas fa-search"></i> Preview
+              <i class="fas fa-eye"></i> Preview
             </a>
             <a href="Aditya_Sakhare_Data_Analyst_CV.pdf" download class="btn download-btn">
               <i class="fas fa-download"></i> Download
@@ -179,10 +195,10 @@
 
         <!-- Resume 2 -->
         <div class="card">
-          <h3><i class="fas fa-clipboard-list"></i> Sr. QC Lead Resume</h3>
+          <h3>Sr. QC Lead Resume</h3>
           <div class="btn-group">
             <a href="Aditya_Sakhare_sr.QC_lead.pdf" target="_blank" class="btn preview-btn">
-              <i class="fas fa-search"></i> Preview
+              <i class="fas fa-eye"></i> Preview
             </a>
             <a href="Aditya_Sakhare_sr.QC_lead.pdf" download class="btn download-btn">
               <i class="fas fa-download"></i> Download
@@ -190,6 +206,18 @@
           </div>
         </div>
 
+      </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="section">
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:adityasakhare0408@gmail.com"><i class="fas fa-envelope"></i> adityasakhare0408@gmail.com</a>
+        <a href="https://linkedin.com/in/aditya-sakhare-2b7090189" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/asakhare0408" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <!-- Optional Phone -->
+        <!-- <a href="tel:+91XXXXXXXXXX"><i class="fas fa-phone"></i> +91-9662065638</a> -->
       </div>
     </div>
   </div>
